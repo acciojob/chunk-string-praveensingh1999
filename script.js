@@ -1,13 +1,14 @@
+
 function stringChop(str, size) {
   // your code here
 	let ans=[];
 	let i=0;
-	while(i<str.length-size){
+	while(i<str.length){
 		
 	
 		let val="";
 		let j;
-		for( j=i;j<i+size;j++){
+		for( j=i;j<i+size && j<str.length ;j++){
 			val+=str[j];
 		}
 		
